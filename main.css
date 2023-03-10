@@ -1,0 +1,115 @@
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.f-main {
+    font-family: 'Orbitron', sans-serif;
+}
+.f-sec {
+    font-family: 'Jura', sans-serif;
+}
+
+:root {
+    --c-main: #ffffff;  
+    --c-sec: #808080;   
+    --c-accent: rgb(43, 157, 244);
+}
+.tx-main {
+    color: var(--c-main);
+}
+
+.tx-s {
+    color: var(--c-sec);
+}
+
+.tx-accent {
+    color: var(--c-accent);
+}
+.my-imgmoon {
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    background-image: radial-gradient(circle closest-side,rgba(0, 12, 56, 0.306),#000000), url(./media/moon.jpg);;
+    /* background:linear-gradient(to bottom, rgba(0, 0, 0, 0.939), rgba(0, 0, 0, 0.951)), url(./media/moon.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.my-cardlorem {
+    border-bottom: 2px solid var(--c-accent);
+}
+.my-imgmoon2 {
+    width: 100%;
+    background: url(./media/moon2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.my-imgmeteor {
+    height: 30px;
+    width: 30px;
+}
+.my-loremtx {
+    border-bottom: 1px solid var(--c-accent);
+}
+.mycontmissile {
+    background-color: #000000;
+    background-image: url("/media/missile-2027068_1280.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 85%;
+}
+.btn-bd-primary {
+    height: 60px;
+    width: 150px;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: black;
+    border-radius: 0%;
+    border-style: dashed;
+    --bs-btn-border-color: var(--c-accent);
+    --bs-btn-hover-color: var(--c-accent);
+    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+    --bs-btn-active-color: var(--bs-btn-hover-color);
+    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+  }
+  .my-contfooter {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(./media/sunrise-1765027_1920.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btn:hover {
+    color: white;
+    transition: 0.5s;
+    border: 2px solid var(--c-accent);
+    
+    
+  }
+
+  .my-chevron {
+    animation-name: scrollDown;
+    cursor: pointer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+  }
+  @keyframes scrollDown {
+        from {
+            opacity: 0;
+            bottom: 20%;
+        }
+    
+        to {
+            opacity: 1;
+            bottom: 10%;
+        }
+    }
+    
+ 
